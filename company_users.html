@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Users in {{ company.name }}</h2>
+
+{% if users %}
+    <ul>
+        {% for user in users %}
+            <li>
+                Name : {{ user.name }} | Email : {{ user.email }} | Phone : {{ user.phone }}
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No users found for this company.</p>
+{% endif %}
+
+<a href="{{ url_for('organisations') }}">Back to Organisations</a>
+{% endblock %}

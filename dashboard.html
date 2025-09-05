@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Dashboard</h2>
+
+<h3>Companies</h3>
+<ul>
+  {% for company in companies %}
+    <li>{{ company.name }}</li>
+  {% endfor %}
+</ul>
+
+<h3>Users</h3>
+<ul>
+  {% for user in users %}
+    <li>{{ user.name }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

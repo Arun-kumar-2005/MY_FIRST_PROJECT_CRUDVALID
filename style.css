@@ -1,0 +1,172 @@
+/* ====== Global ====== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+}
+
+/* ====== Navbar ====== */
+nav {
+    background: #343a40;
+    padding: 12px 20px;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffc107;
+}
+
+/* ====== Container ====== */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ====== Headings ====== */
+h2, h3 {
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* ====== Forms ====== */
+form {
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #fdfdfd;
+    border-radius: 8px;
+}
+
+input, textarea, select {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border 0.2s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+/* ====== Button ====== */
+button {
+    padding: 10px 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* ====== Lists ====== */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    background: #f1f3f5;
+    margin: 6px 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+ul li strong {
+    color: #007bff;
+}
+
+.action-btn {
+    display: inline-block;
+    margin: 5px 5px 0 0;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-delete {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-delete:hover {
+    background: #a71d2a;
+}
+
+.btn-view {
+    background: #007bff;
+    color: white;
+}
+
+.btn-view:hover {
+    background: #0056b3;
+}
+
+.org-list {
+  list-style: none;
+  padding: 0;
+}
+
+.org-item {
+  background: #f8f9fa;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between; /* pushes info left, buttons right */
+  align-items: center;
+}
+
+.org-info {
+  flex: 1;
+}
+
+.org-actions {
+  display: flex;
+  gap: 8px; /* spacing between buttons */
+}
+
+.inline-form {
+  display: inline; /* removes block form white space */
+  margin: 0;
+  padding: 0;
+}
+
+.user-item {
+  background: #f8f9fa;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: flex-start; /* keep items aligned left */
+  align-items: center;
+  gap: 12px; /* space between delete and info */
+}
